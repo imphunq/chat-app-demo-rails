@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails',                   '5.0.1'
 gem 'bcrypt',                  '3.1.11'
 gem 'faker',                   '1.6.6'
-gem 'puma',                    '3.4.0'
+gem 'puma'
 gem 'sass-rails',              '5.0.6'
 gem 'uglifier',                '3.0.0'
 gem 'coffee-rails',            '4.2.1'
@@ -31,8 +31,8 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
-  gem 'rails_12factor'
+  gem 'pg', "~> 0.18"
+  gem 'rails_12factor', "0.0.2"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
